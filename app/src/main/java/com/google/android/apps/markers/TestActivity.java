@@ -35,7 +35,7 @@ public class TestActivity extends Activity {
         mSlate.setZoomMode(false);
         mSlate.setPenSize(2, 24);
         mSlate.setPenColor(0xFF000000);
-        mSlate.setPenType(0);
+        mSlate.setPenType(1);
     }
 
     public void setPenColor(int color) {
