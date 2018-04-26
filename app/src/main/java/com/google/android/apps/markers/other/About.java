@@ -14,14 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.nio.CharBuffer;
+package com.google.android.apps.markers.other;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -30,16 +23,21 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.res.AssetFileDescriptor;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.TextView;
 
+import com.google.android.apps.markers.MarkersActivity;
+
 import org.dsandler.apps.markers.R;
 
-class About {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class About {
     static char buf[] = new char[1024];
 
     static String loadFileText(Context context, String filename) {
@@ -70,7 +68,7 @@ class About {
         return version;
     }
 
-	static void show(final MarkersActivity activity) {
+	public static void show(final MarkersActivity activity) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle(null);
         builder.setCancelable(true);

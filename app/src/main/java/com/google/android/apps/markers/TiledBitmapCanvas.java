@@ -7,6 +7,8 @@ import android.graphics.Bitmap.Config;
 import android.util.FloatMath;
 import android.util.Log;
 
+import com.google.android.apps.markers.other.CanvasLite;
+
 public class TiledBitmapCanvas implements CanvasLite {
     public static final String TAG = "Markers/TiledBitmapCanvas";
 

@@ -14,15 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.other;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.util.Log;
 
-class PressureCooker {
+public class PressureCooker {
     private static final String PREFS_NAME = "Markers";
     
     private static final String PREF_MIN_DIAMETER = "min_diameter";

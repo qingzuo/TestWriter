@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.other;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -23,8 +23,8 @@ import android.widget.ImageView;
 
 import org.dsandler.apps.markers.R;
 
-class QrCode {
-	static void show(final Activity activity) {
+public class QrCode {
+	public static void show(final Activity activity) {
         final AlertDialog.Builder builder;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 		    builder = new AlertDialog.Builder(activity, android.R.style.Theme_Light_Panel);
