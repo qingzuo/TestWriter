@@ -28,7 +28,7 @@
         android:layout_marginBottom="96dp"
         android:layout_marginTop="@dimen/action_bar_height" />
 
-    <com.google.android.apps.markers.LogoView
+    <com.google.android.apps.markers.other.LogoView
         android:id="@+id/logo"
         android:layout_width="@dimen/action_bar_logo_width"
         android:layout_height="@dimen/action_bar_height"

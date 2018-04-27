@@ -36,6 +36,8 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.google.android.apps.markers.other.PenWidthEditorView;
+
 import org.dsandler.apps.markers.R;
 
 public class ToolButton extends View implements View.OnLongClickListener, View.OnClickListener {

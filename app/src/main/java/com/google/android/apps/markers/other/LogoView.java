@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.other;
 
 import android.content.Context;
 import android.graphics.Rect;

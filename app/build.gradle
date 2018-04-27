@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "org.dsandler.apps.markers"
-        minSdkVersion 9
+        minSdkVersion 11
         targetSdkVersion 22
     }
 

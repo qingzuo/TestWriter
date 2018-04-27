@@ -14,13 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.other;
 
 import android.content.Context;
 import android.graphics.*;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.google.android.apps.markers.Slate;
+import com.google.android.apps.markers.ToolButton;
 
 public class PenWidthEditorView extends View {
     static final float WIDTH_MIN = 0.25f; // px

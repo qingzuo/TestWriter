@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.other;
 
-import java.util.Iterator;
 import java.util.LinkedList;
 
 import android.view.MotionEvent;

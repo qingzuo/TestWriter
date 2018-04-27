@@ -16,8 +16,6 @@
 
 package com.google.android.apps.markers;
 
-import java.util.ArrayList;
-
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.Context;
@@ -28,10 +26,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.Paint.Style;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
-import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
@@ -39,12 +35,16 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Region;
-import android.graphics.Region.Op;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.google.android.apps.markers.other.CanvasLite;
+import com.google.android.apps.markers.other.PressureCooker;
+import com.google.android.apps.markers.other.Spot;
+import com.google.android.apps.markers.other.SpotFilter;
 
 import org.dsandler.apps.markers.R;
 
