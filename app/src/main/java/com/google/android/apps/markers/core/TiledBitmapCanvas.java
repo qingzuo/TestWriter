@@ -1,16 +1,21 @@
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.core;
 
-import java.util.ArrayList;
-
-import android.graphics.*;
+import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.util.FloatMath;
 import android.util.Log;
 
-import com.google.android.apps.markers.other.CanvasLite;
+import java.util.ArrayList;
 
-public class TiledBitmapCanvas implements CanvasLite {
-    public static final String TAG = "Markers/TiledBitmapCanvas";
+class TiledBitmapCanvas implements CanvasLite {
+    public static final String TAG = "TiledBitmapCanvas";
 
     public static final boolean DEBUG_TILES_ON_COMMIT = false;
     private static final boolean DEBUG_VERBOSE = false;

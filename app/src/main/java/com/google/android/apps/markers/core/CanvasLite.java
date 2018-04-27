@@ -1,4 +1,4 @@
-package com.google.android.apps.markers.other;
+package com.google.android.apps.markers.core;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

@@ -61,10 +61,13 @@ import android.widget.Toast;
 
 import org.dsandler.apps.markers.R;
 
-import com.google.android.apps.markers.ToolButton.SwatchButton;
+import com.google.android.apps.markers.other.ToolButton;
+import com.google.android.apps.markers.other.ToolButton.SwatchButton;
+import com.google.android.apps.markers.core.Slate;
 import com.google.android.apps.markers.other.About;
 import com.google.android.apps.markers.other.DecorTracker;
 import com.google.android.apps.markers.other.QrCode;
+import com.google.android.apps.markers.other.ZoomTouchView;
 
 public class MarkersActivity extends Activity {
     final static int LOAD_IMAGE = 1000;

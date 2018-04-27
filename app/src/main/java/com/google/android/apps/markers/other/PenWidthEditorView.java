@@ -22,8 +22,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.google.android.apps.markers.Slate;
-import com.google.android.apps.markers.ToolButton;
+import com.google.android.apps.markers.core.Slate;
 
 public class PenWidthEditorView extends View {
     static final float WIDTH_MIN = 0.25f; // px

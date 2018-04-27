@@ -24,7 +24,7 @@
     <!-- zoomer -->
     <view
         android:id="@+id/tool_zoom"
-        class="com.google.android.apps.markers.ToolButton$ZoomToolButton"
+        class="com.google.android.apps.markers.other.ToolButton$ZoomToolButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/tool_palette_gutter"
@@ -34,7 +34,7 @@
     <!-- felt tip pen -->
     <view
         android:id="@+id/pen_thin"
-        class="com.google.android.apps.markers.ToolButton$PenToolButton"
+        class="com.google.android.apps.markers.other.ToolButton$PenToolButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -45,7 +45,7 @@
     <!-- small brush -->
     <view
         android:id="@+id/pen_medium"
-        class="com.google.android.apps.markers.ToolButton$PenToolButton"
+        class="com.google.android.apps.markers.other.ToolButton$PenToolButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -56,7 +56,7 @@
     <!-- large brush -->
     <view
         android:id="@+id/pen_thick"
-        class="com.google.android.apps.markers.ToolButton$PenToolButton"
+        class="com.google.android.apps.markers.other.ToolButton$PenToolButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -67,7 +67,7 @@
     <!-- fat marker -->
     <view
         android:id="@+id/fat_marker"
-        class="com.google.android.apps.markers.ToolButton$PenToolButton"
+        class="com.google.android.apps.markers.other.ToolButton$PenToolButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -85,7 +85,7 @@
 
         <view
             android:id="@+id/whiteboard_marker"
-            class="com.google.android.apps.markers.ToolButton$PenTypeButton"
+            class="com.google.android.apps.markers.other.ToolButton$PenTypeButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -95,7 +95,7 @@
 
         <view
             android:id="@+id/felttip_marker"
-            class="com.google.android.apps.markers.ToolButton$PenTypeButton"
+            class="com.google.android.apps.markers.other.ToolButton$PenTypeButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -105,7 +105,7 @@
 
         <view
             android:id="@+id/airbrush_marker"
-            class="com.google.android.apps.markers.ToolButton$PenTypeButton"
+            class="com.google.android.apps.markers.other.ToolButton$PenTypeButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -115,7 +115,7 @@
 
         <view
             android:id="@+id/fountainpen_marker"
-            class="com.google.android.apps.markers.ToolButton$PenTypeButton"
+            class="com.google.android.apps.markers.other.ToolButton$PenTypeButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

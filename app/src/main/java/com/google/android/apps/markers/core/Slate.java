@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.core;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
@@ -41,17 +41,12 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.google.android.apps.markers.other.CanvasLite;
-import com.google.android.apps.markers.other.PressureCooker;
-import com.google.android.apps.markers.other.Spot;
-import com.google.android.apps.markers.other.SpotFilter;
-
 import org.dsandler.apps.markers.R;
 
 public class Slate extends View {
 
     static final boolean DEBUG = false;
-    static final String TAG = "Slate";
+    public static final String TAG = "Slate";
 
     public static final boolean HWLAYER = true;
     public static final boolean SWLAYER = false;
@@ -616,7 +611,7 @@ public class Slate extends View {
     private Paint mGraphPaint1;
     private int mBackgroundColor = Color.TRANSPARENT;
 
-    private void drawStrokeDebugInfo(Canvas c) {
+    private void drawStrokeDebugInfo(Canvas canvas) {
         final int ROW_HEIGHT = 24;
         final int ROW_MARGIN = 6;
         final int COLUMN_WIDTH = 55;
@@ -625,7 +620,7 @@ public class Slate extends View {
         final float FIRM_PRESSURE_HIGH = 1.25f;
 
         if (mStrokeDebugGraph == null) {
-            final int width = c.getWidth() - 128;
+            final int width = canvas.getWidth() - 128;
             final int height = ROW_HEIGHT * mStrokes.length + 2 * ROW_MARGIN;
             mStrokeDebugGraph = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
             if (mStrokeDebugGraph == null) {
@@ -682,8 +677,8 @@ public class Slate extends View {
         final int x = 96;
         final int y = 64;
 
-        c.drawBitmap(mStrokeDebugGraph, x, y, null);
-        invalidate(new Rect(x, y, x + c.getWidth(), y + c.getHeight()));
+        canvas.drawBitmap(mStrokeDebugGraph, x, y, null);
+        invalidate(new Rect(x, y, x + canvas.getWidth(), y + canvas.getHeight()));
     }
 
     public void commitStroke() {
@@ -822,7 +817,7 @@ public class Slate extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         if (mTiledCanvas != null) {
-            canvas.save(Canvas.MATRIX_SAVE_FLAG);
+            canvas.save();
 
             if (mPanX != 0 || mPanY != 0 || !mZoomMatrix.isIdentity()) {
                 canvas.translate(mPanX, mPanY);

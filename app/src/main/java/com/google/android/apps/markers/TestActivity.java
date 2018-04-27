@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.google.android.apps.markers.core.Slate;
+
 import org.dsandler.apps.markers.R;
 
 public class TestActivity extends Activity {

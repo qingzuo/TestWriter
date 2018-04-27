@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers;
+package com.google.android.apps.markers.other;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -36,7 +36,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.google.android.apps.markers.other.PenWidthEditorView;
+import com.google.android.apps.markers.core.Slate;
 
 import org.dsandler.apps.markers.R;
 
@@ -406,7 +406,7 @@ public class ToolButton extends View implements View.OnLongClickListener, View.O
         setOnLongClickListener(this);
     }
 
-    void setCallback(ToolCallback cb) {
+    public void setCallback(ToolCallback cb) {
         mCallback = cb;
     }
 
@@ -423,7 +423,7 @@ public class ToolButton extends View implements View.OnLongClickListener, View.O
         // pass
     }
 
-    void deactivate() {
+    public void deactivate() {
         setSelected(false);
         setPressed(false);
     }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers.other;
+package com.google.android.apps.markers.core;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -70,7 +70,7 @@ public class PressureCooker {
         SharedPreferences prefs = mContext.getSharedPreferences(PREFS_NAME, Context.MODE_WORLD_READABLE);
         SharedPreferences.Editor prefsE = prefs.edit();
         prefsE.putBoolean(PREF_FIRST_RUN, false);
-    
+
         prefsE.putFloat(PREF_PRESSURE_MIN, mPressureMin);
         prefsE.putFloat(PREF_PRESSURE_MAX, mPressureMax);
     

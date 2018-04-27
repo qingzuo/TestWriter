@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers.other;
+package com.google.android.apps.markers.core;
 
 import android.os.SystemClock;
 import android.view.MotionEvent;

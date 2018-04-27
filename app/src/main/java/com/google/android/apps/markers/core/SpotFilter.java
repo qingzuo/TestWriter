@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.markers.other;
-
-import java.util.LinkedList;
+package com.google.android.apps.markers.core;
 
 import android.view.MotionEvent;
+
+import java.util.LinkedList;
 
 public class SpotFilter {
     public static boolean DEBUG = true;
